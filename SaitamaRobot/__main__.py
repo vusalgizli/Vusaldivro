@@ -268,7 +268,7 @@ def help_button(update, context):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = ("*{}* modulu haqqında məlumat:\n 👨🏻‍💻 *RoBotlarımTg* ".format(
+            text = ("*{}* modulu haqqında məlumat:\n 👨🏻‍💻 *AzeSohbetGurupu* ".format(
                 HELPABLE[module].__mod_name__) + HELPABLE[module].__help__)
             query.message.edit_text(
                 text=text,
