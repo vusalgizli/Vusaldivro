@@ -51,13 +51,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-🙋🏻‍♀️Salam {} necəsən? mənim adım {}! 
+🙋🏻‍♂️Salam {} necəsən? mənim adım {}! 
 👮🏻‍♀️Mən Telegram qruplarını qorumaq üçün Azərbaycanca Olan Qrup İdarə Botuyam!.
 👩‍🔧 Bacarıqlarımı görməy üçün buttona klik et
 """
 
 HELP_STRINGS = """
-🙋🏻‍♀️Xoş gəldiniz! Mənim adım *{}*.
+🙋🏻‍♂️Xoş gəldiniz! Mənim adım *{}*.
 👮🏻‍♀️Görünür köməyə ehdiyacınız var Məni qrupa əlavə edib admin edin.
 🛡️Aşağıda gördüyünüz modullarımla sizin qrupunuzu tam güvəndə saxlayacam!
 
@@ -75,7 +75,7 @@ Və aşağıdakılar:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nBütün əmrlər / və ya ! ilə işlədilir.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/9b788bec1dd6dc3262fa0.jpg"
+SAITAMA_IMG = "https://te.legra.ph/file/62aaaa15c65511531cab0.jpg"
 
 DONATE_STRING = """Bizi seçdiyiniz üçün təşəkkür edirik  🌚"""
 
@@ -200,15 +200,15 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="👨‍💻 Sahibim",
-                             url=f"https://t.me/aykhan_s"),
+                             url=f"https://t.me/vusaliw"),
                          InlineKeyboardButton(
                              text="🔔 Yeniliklər kanalı",
-                             url="https://t.me/RoBotlarimTg")
+                             url="https://t.me/AzeBotlarimTg")
                     ],
                      [
                          InlineKeyboardButton(
                              text="🙋🏻‍♂️ Dəstək Qrupumuz",
-                             url=f"https://t.me/RoBotlarimGroup")
+                             url=f"https://t.me/AzeSohbetGurupu")
                      ],
                      [
                          InlineKeyboardButton(
@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                     ]]))
     else:
         update.effective_message.reply_text(
-            "🧚‍♀Bəli, Mən Nəzrin♥️ İşləyirəm"
+            "🌟Bəli, Mən Vüsal 👮 İşləyirəm"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
